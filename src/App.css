@@ -1,0 +1,36 @@
+/* Firanta WebStore — Global styles handled via index.css and Tailwind */
+
+/* Animated Hero Title Styles */
+.title-char,
+.dynamic-char {
+  color: #ffffff !important;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-shadow: 
+    0 0 20px rgba(147, 112, 219, 0.7),
+    0 0 40px rgba(59, 130, 246, 0.5),
+    0 0 60px rgba(139, 92, 246, 0.4);
+  display: inline-block;
+  will-change: transform;
+  text-align: center;
+}
+
+.space-char {
+  display: inline-block;
+  width: 0.35em;
+  height: 1em;
+}
+
+.title-char,
+.dynamic-char {
+  cursor: pointer;
+  transition: text-shadow 0.3s ease;
+}
+
+.title-char:hover,
+.dynamic-char:hover {
+  text-shadow: 
+    0 0 30px rgba(147, 112, 219, 1),
+    0 0 60px rgba(59, 130, 246, 0.8),
+    0 0 90px rgba(139, 92, 246, 0.6);
+}
